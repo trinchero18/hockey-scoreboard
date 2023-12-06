@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 
 import './styles.css';
 
-import Main from './Features/Main';
+import { Main } from './Features/Main';
 
 import reportWebVitals from './reportWebVitals';
 
