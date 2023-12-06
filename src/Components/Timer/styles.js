@@ -15,7 +15,7 @@ export const ButtonSection = styled.div`
   cursor: pointer;
   position: absolute;
   bottom: 0;
-  left: calc(50% - 100px);
+  left: calc(50% - 180px);
   z-index: 9999;
   display: flex;
 

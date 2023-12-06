@@ -3,7 +3,7 @@ import { formatTime } from '../../Utils/timer.js';
 
 import PlayCircleIcon from '@mui/icons-material/PlayCircle';
 import PauseCircleIcon from '@mui/icons-material/PauseCircle';
-import ChangeCircleIcon from '@mui/icons-material/ChangeCircle';
+import CancelIcon from '@mui/icons-material/Cancel';
 import LooksTwoIcon from '@mui/icons-material/LooksTwo';
 import Looks5Icon from '@mui/icons-material/Looks5';
 
@@ -61,8 +61,8 @@ export const PenaltyTimer = () => {
         currentTime !== 0 ?
         <ButtonSection>
           <PlayCircleIcon sx={{ color: '#FFFFFF' }} fontSize="large" onClick={startTimer} />
-          <PauseCircleIcon sx={{ color: '#FFFFFF' }} fontSize="large" onClick={stopTimer}/>
-          <ChangeCircleIcon sx={{ color: '#FFFFFF' }} fontSize="large" onClick={resetTimer}/>
+          <PauseCircleIcon sx={{ color: '#FFFFFF', marginBottom: '25px' }} fontSize="large" onClick={stopTimer}/>
+          <CancelIcon sx={{ color: '#FFFFFF' }} fontSize="large" onClick={resetTimer}/>
         </ButtonSection>
         :
         <ButtonSection>

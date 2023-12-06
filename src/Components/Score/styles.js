@@ -14,7 +14,7 @@ export const Container = styled.div`
 `;
 
 export const InputName = styled.input`
-  font-family: clock;
+  font-family: system-ui;
   font-size: 6vw;
   background: none;
   outline: none;
@@ -25,7 +25,7 @@ export const InputName = styled.input`
 `;
 
 export const Label = styled.label`
-  font-family: clock;
+  font-family: system-ui;
   font-size: 10vw;
   text-align: center;
 `;
@@ -39,6 +39,11 @@ export const Number = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 40%;
+
+  &:nth-child(2) {
+    width: 10%;
+  }
 `;
 
 export const Scores = styled.div`
