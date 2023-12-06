@@ -18,9 +18,14 @@ export const ButtonSection = styled.div`
   left: calc(50% - 180px);
   z-index: 9999;
   display: flex;
+  opacity: 0.3;
 
   div {
     margin-left: 50px;
+  }
+
+  &:hover {
+    opacity: 1;
   }
 `;
 

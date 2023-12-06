@@ -4,9 +4,15 @@ export const ButtonSection = styled.div`
   display: flex;
   flex-direction: column;
   position: absolute;
-  top: 40px;
-  right: 20px;
+  top: 15px;
+  right: 2%;
+  justify-content: center;
   cursor: pointer;
+  opacity: 0.3;
+
+  &:hover {
+    opacity: 1;
+  }
 `;
 
 export const Container = styled.div`
@@ -31,5 +37,5 @@ export const Label = styled.label`
   font-size: 10vw;
   color: white;
   text-align: center;
-  margin-left: 60px;
+  margin-left: 10%;
 `;

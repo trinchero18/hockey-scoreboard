@@ -2,6 +2,11 @@ import styled from "styled-components";
 
 export const Buttons = styled.div`
   cursor: pointer;
+  opacity: 0.1;
+
+  &:hover {
+    opacity: 1;
+  }
 `;
 
 export const Container = styled.div`

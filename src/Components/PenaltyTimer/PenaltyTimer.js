@@ -61,7 +61,7 @@ export const PenaltyTimer = () => {
         currentTime !== 0 ?
         <ButtonSection>
           <PlayCircleIcon sx={{ color: '#FFFFFF' }} fontSize="large" onClick={startTimer} />
-          <PauseCircleIcon sx={{ color: '#FFFFFF', marginBottom: '25px' }} fontSize="large" onClick={stopTimer}/>
+          <PauseCircleIcon sx={{ color: '#FFFFFF', marginBottom: '15px' }} fontSize="large" onClick={stopTimer}/>
           <CancelIcon sx={{ color: '#FFFFFF' }} fontSize="large" onClick={resetTimer}/>
         </ButtonSection>
         :
