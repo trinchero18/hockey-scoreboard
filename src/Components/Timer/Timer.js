@@ -54,6 +54,12 @@ export const Timer = () => {
     setCurrentTime(900);
   };
 
+  const set12min = () => {
+    setPausedTime(currentTime);
+    clearInterval(mainIntervalId);
+    setCurrentTime(720);
+  };
+
   const setOvertime = () => {
     setPausedTime(currentTime);
     clearInterval(mainIntervalId);
@@ -81,6 +87,7 @@ export const Timer = () => {
         <Middle>
           <IconCustomTimer sx={{ color: '#FFFFFF' }} fontSize="large" onClick={set20min}>20</IconCustomTimer>
           <IconCustomTimer sx={{ color: '#FFFFFF' }} fontSize="large" onClick={set15min}>15</IconCustomTimer>
+          <IconCustomTimer sx={{ color: '#FFFFFF' }} fontSize="large" onClick={set12min}>12</IconCustomTimer>
           <Looks5Icon sx={{ color: '#FFFFFF' }} fontSize="large" onClick={setOvertime} />
           <LooksOneIcon sx={{ color: '#FFFFFF' }} fontSize="large" onClick={setDeathTime} />
         </Middle>
