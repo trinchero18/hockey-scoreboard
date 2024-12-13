@@ -3,12 +3,11 @@ import { formatTime } from '../../Utils/timer.js';
 
 import PlayCircleIcon from '@mui/icons-material/PlayCircle';
 import PauseCircleIcon from '@mui/icons-material/PauseCircle';
-import ChangeCircleIcon from '@mui/icons-material/ChangeCircle';
 import CancelIcon from '@mui/icons-material/Cancel';
 import LooksOneIcon from '@mui/icons-material/LooksOne';
 import Looks5Icon from '@mui/icons-material/Looks5';
 
-import { ButtonSection, Container, Label } from './styles.js';
+import { ButtonSection, Container, IconCustomTimer, Label, Middle } from './styles.js';
 
 export const Timer = () => {
   const [currentTime, setCurrentTime] = useState(1200);
@@ -43,10 +42,16 @@ export const Timer = () => {
     setCurrentTime(seconds);
   };
 
-  const setNormalTime = () => {
+  const set20min = () => {
     setPausedTime(currentTime);
     clearInterval(mainIntervalId);
     setCurrentTime(1200);
+  };
+
+  const set15min = () => {
+    setPausedTime(currentTime);
+    clearInterval(mainIntervalId);
+    setCurrentTime(900);
   };
 
   const setOvertime = () => {
@@ -73,11 +78,12 @@ export const Timer = () => {
       <ButtonSection>
         <PlayCircleIcon sx={{ color: '#FFFFFF' }} fontSize="large" onClick={startTimer} />
         <PauseCircleIcon sx={{ color: '#FFFFFF' }} fontSize="large" onClick={stopTimer} />
-        <div>
-          <ChangeCircleIcon sx={{ color: '#FFFFFF' }} fontSize="large" onClick={setNormalTime} />
+        <Middle>
+          <IconCustomTimer sx={{ color: '#FFFFFF' }} fontSize="large" onClick={set20min}>20</IconCustomTimer>
+          <IconCustomTimer sx={{ color: '#FFFFFF' }} fontSize="large" onClick={set15min}>15</IconCustomTimer>
           <Looks5Icon sx={{ color: '#FFFFFF' }} fontSize="large" onClick={setOvertime} />
           <LooksOneIcon sx={{ color: '#FFFFFF' }} fontSize="large" onClick={setDeathTime} />
-        </div>
+        </Middle>
         <div>
           <CancelIcon sx={{ color: '#FFFFFF' }} fontSize="large" onClick={goBack} />
         </div>

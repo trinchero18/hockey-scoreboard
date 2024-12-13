@@ -34,3 +34,18 @@ export const Container = styled.div`
   flex-direction: column;
   position: relative;
 `;
+
+export const IconCustomTimer = styled.div`
+  background: white;
+  padding: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 10%;
+  margin-left: 5px !important;
+`;
+
+export const Middle = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
